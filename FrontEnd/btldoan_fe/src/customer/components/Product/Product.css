@@ -1,0 +1,32 @@
+/* Đảm bảo thông báo xuất hiện mượt mà và biến mất mượt mà */
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes fadeOut {
+  0% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+
+  100% {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+}
+
+.notification {
+  animation: fadeIn 1s ease-in-out forwards;
+}
+
+.notification-hide {
+  animation: fadeOut 1s ease-in-out forwards;
+}
